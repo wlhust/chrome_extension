@@ -1,9 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-
-# Your rule content
-- 我的电脑的macbook
-- 如果我让你介绍方案，就只是介绍方案，不用写代码和其他命令行操作
