@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter翻译助手",
+  "version": "1.0",
+  "description": "为Twitter(X)添加翻译按钮，使用腾讯云翻译API翻译推文",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.twitter.com/*",
+    "https://twitter.com/*",
+    "https://*.x.com/*",
+    "https://x.com/*",
+    "https://*.tencentcloudapi.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitter.com/*",
+        "https://twitter.com/*", 
+        "https://*.x.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+} 

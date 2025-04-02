@@ -1,0 +1,14 @@
+{
+  "name": "twitter-translate-extension",
+  "version": "1.0.0",
+  "description": "Twitter翻译助手Chrome扩展",
+  "main": "background.js",
+  "scripts": {
+    "generate-icons": "node icon-generator.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+} 

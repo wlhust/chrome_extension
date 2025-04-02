@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- 背景圆圈 -->
+  <circle cx="8" cy="8" r="6" fill="#1DA1F2" />
+  
+  <!-- 内圈 -->
+  <circle cx="8" cy="8" r="6.4" fill="#0c85d0" />
+  
+  <!-- T字母 -->
+  <text x="8" y="8" 
+        font-family="Arial, sans-serif" 
+        font-size="8" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle" 
+        dominant-baseline="middle">T</text>
+  
+  <!-- 翻译箭头 -->
+  <g stroke="white" stroke-width="1">
+    <!-- 横线 -->
+    <line x1="5.6" y1="10.879999999999999" 
+          x2="10.4" y2="10.879999999999999" />
+    
+    <!-- 箭头尖 -->
+    <line x1="10.4" y1="10.879999999999999" 
+          x2="9.44" y2="9.92" />
+    <line x1="10.4" y1="10.879999999999999" 
+          x2="9.44" y2="11.84" />
+  </g>
+</svg>

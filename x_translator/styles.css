@@ -1,0 +1,104 @@
+/* 翻译按钮容器 */
+.translate-button-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+/* 独立的按钮容器 */
+.translate-button-container.standalone {
+  margin: 8px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 翻译按钮样式 */
+.translate-button {
+  background-color: rgba(29, 155, 240, 0.1);
+  color: rgb(29, 155, 240);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.translate-button:hover {
+  background-color: rgba(29, 155, 240, 0.2);
+}
+
+.translate-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 翻译结果容器 */
+.tweet-translation {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background-color: rgba(247, 249, 249, 0.8);
+  border: 1px solid rgb(239, 243, 244);
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: rgb(15, 20, 25);
+  position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 设置提示 */
+.translate-settings-tip {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(29, 155, 240, 0.9);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s;
+}
+
+/* 标记按钮，使其更明显 */
+.translate-button::before {
+  content: "T";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 4px;
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .translate-button {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgb(29, 155, 240);
+  }
+  
+  .translate-button:hover {
+    background-color: rgba(29, 155, 240, 0.2);
+  }
+  
+  .tweet-translation {
+    background-color: rgba(30, 39, 50, 0.8);
+    border-color: rgb(56, 68, 77);
+    color: rgb(247, 249, 249);
+  }
+} 
