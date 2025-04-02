@@ -66,24 +66,6 @@
 
 本扩展只会将您的翻译请求发送到腾讯云翻译API，不会收集或存储您的个人信息或浏览数据。您的API密钥仅保存在浏览器本地，不会上传到任何服务器。
 
-## 📄 许可证
-
-MIT License
-
-## 🤝 贡献
-
-欢迎提交问题报告和功能建议！如果您想为项目做出贡献，请：
-1. Fork 本仓库
-2. 创建您的特性分支：`git checkout -b feature/amazing-feature`
-3. 提交您的更改：`git commit -m 'Add some amazing feature'`
-4. 推送到分支：`git push origin feature/amazing-feature`
-5. 开启一个Pull Request
-
-## 📞 联系方式
-
-如有问题或建议，请通过以下方式联系：
-- 提交GitHub Issue
-- 邮箱：[您的邮箱地址]
 
 ---
 
